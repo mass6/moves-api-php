@@ -17,6 +17,15 @@ class Moves
         $this->accessToken = $accessToken;
     }
 
+     /**
+     * Set access token
+     * @param $accessToken
+     */
+    public function setAccessToken($accessToken)
+    {
+        $this->accessToken = $accessToken;
+    }
+    
     public function profile()
     {
         return $this->get('user/profile');
